@@ -1,0 +1,17 @@
+{
+  "name": "adriana-test",
+  "version": "1.0.0",
+  "description": "Tests to help Adriana",
+  "main": "index.js",
+  "scripts": {
+    "test": "testem"
+  },
+  "author": "Bruno Schmidt",
+  "license": "GPLv3",
+  "devDependencies": {
+    "testem": "^2.16.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
