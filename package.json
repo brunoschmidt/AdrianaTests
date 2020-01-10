@@ -4,6 +4,7 @@
   "description": "Tests to help Adriana",
   "main": "index.js",
   "scripts": {
+    "run": "node index.js",
     "test": "testem"
   },
   "author": "Bruno Schmidt",
