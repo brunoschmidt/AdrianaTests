@@ -32,10 +32,29 @@ function splice(arr, begin, count, items) {
     return kept;
 }
 
-let array = [1, 2, 3];
-console.log(array);
+function test(array, begin, count, items) {
+    let cp = array.slice(0);
+    
+    let kept = splice(array, begin, count, items);
 
-let kept = splice(array, -2, 1, 'a');
+    console.log(arguments[1], arguments[2], arguments[3] , cp, array, kept);
+}
 
-console.log(array);
-console.log(kept);
+test([1, 2, 3], 4, 1, 'a');
+test([1, 2, 3], 3, 1, 'a');
+test([1, 2, 3], 2, 1, 'a');
+test([1, 2, 3], 1, 1, 'a');
+test([1, 2, 3], 0, 1, 'a');
+test([1, 2, 3], -1, 1, 'a');
+test([1, 2, 3], -2, 1, 'a');
+test([1, 2, 3], -3, 1, 'a');
+
+test([1, 2, 3], 4, 0, 'a');
+test([1, 2, 3], 3, 0, 'a');
+test([1, 2, 3], 2, 0, 'a');
+test([1, 2, 3], 1, 0, 'a');
+test([1, 2, 3], 0, 0, 'a');
+test([1, 2, 3], -1, 0, 'a');
+test([1, 2, 3], -2, 0, 'a');
+test([1, 2, 3], -3, 0, 'a');
+
